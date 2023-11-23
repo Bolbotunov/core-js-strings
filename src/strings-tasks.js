@@ -298,7 +298,10 @@ function containsSubstring(str, substring) {
  */
 function countVowels(str) {
   const vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y'];
-  return str.toLowerCase().split('').filter((item) => vowels.includes(item)).length;
+  return str
+    .toLowerCase()
+    .split('')
+    .filter((item) => vowels.includes(item)).length;
 }
 
 /**
