@@ -368,7 +368,8 @@ function invertCase(str) {
   return str
     .split('')
     .map((item) =>
-      item === item.toUpperCase() ? item.toLowerCase() : item.toUpperCase())
+      item === item.toUpperCase() ? item.toLowerCase() : item.toUpperCase()
+        )
     .join('');
 }
 
